@@ -49,9 +49,14 @@ The below segment of csv file describes the data
 
 This enables us to quickly identify drive segments with incomplete bidirectional coverage using standard GIS file formats.
 
----
+<br>
 
 ### After Verification of Bi-directional data
+
+Obtained Bidirectional Errors
+
+<br>
+
 ![Figure_1](https://github.com/user-attachments/assets/2f65b83f-17c6-47ce-8e77-87c6125ec0f3)
 ![Error1-gis](https://github.com/user-attachments/assets/81a61ce6-5b35-46f5-ba74-8c4631318e0f)
 ![Error1](https://github.com/user-attachments/assets/572a5cd4-9807-4e50-86eb-0aa7daa6c0b4)
