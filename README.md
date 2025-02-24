@@ -1,7 +1,7 @@
 # Verifying-Bidirectional-Drive-Coverage-in-HVSLI-Data
 
 ## Problem Statement
-The given problem was to verify the bidirectional drive coverage which refers to a road network data collected in both directions, i.e. forward and reverse, to ensure complete coverage ogf a route. This way of collecting data ensures that the data is not biased towards one direction of movement. The provided data contained a gps route map of the drive from the HVSLI (High Value Street Level Imagery) data.  
+The given problem was to verify the bidirectional drive coverage which refers to a road network data collected in both directions, i.e. forward and reverse, to ensure complete coverage of a route. This way of collecting data ensures that the data is not biased towards one direction of movement. The provided data contained a gps route map of the drive from the HVSLI (High Value Street Level Imagery) data.  
 
 ### Bi-directional data
 Provided bidirectional data contained mapped route of the drive defined in three video_code attributes, with each route mapped with its latitude and longitude location trace (GPS trace) at each point.
@@ -47,7 +47,7 @@ The below segment of csv file describes the data
    - Visualizes the valid routes (in blue) and flagged errors (in red dashed lines) on an interactive map, with centroids labeled by latitude and longitude.
    - Exports the error geometries as a new shapefile.
 
-This modular approach (data loading, error detection, visualization, and export) enables us to quickly identify drive segments with incomplete bidirectional coverage using standard GIS file formats.
+This enables us to quickly identify drive segments with incomplete bidirectional coverage using standard GIS file formats.
 
 ---
 
