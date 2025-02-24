@@ -30,20 +30,20 @@ The below segment of csv file describes the data
 
 ### Bidirectional Drive Coverage Checker
 
-1. **Loads and Cleans Data:**  
+1. **Loads and Cleans Data :**  
    - Uses GeoPandas to load a shapefile (with associated files like `.dbf`, `.shx`, etc.).
    - Explodes multipart geometries and fixes invalid ones.
 
-2. **Computes Directional Attributes:**  
+2. **Computes Directional Attributes :**  
    - Calculates the orientation (angle) of each drive route.
    - Uses an angle-based function to test whether two segments are nearly parallel.
 
-3. **Spatial Analysis:**  
+3. **Spatial Analysis :**  
    - Constructs an R-tree spatial index for efficient neighbor searches.
    - For each drive segment, it finds nearby segments within a dynamic threshold (based on geometry length) and checks for parallelism.  
    - Segments that lack a sufficiently nearby and parallel neighbor are flagged as "bidirectional errors" (i.e. potentially incomplete drive coverage).
 
-4. **Visualization and Export:**  
+4. **Visualization and Export :**  
    - Visualizes the valid routes (in blue) and flagged errors (in red dashed lines) on an interactive map, with centroids labeled by latitude and longitude.
    - Exports the error geometries as a new shapefile.
 
